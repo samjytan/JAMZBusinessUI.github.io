@@ -1,0 +1,127 @@
+nav ul {
+	overflow:hidden; 
+	overflow-y:scroll;
+}
+
+nav li {
+	border : 5px solid transparent;
+}
+
+#order_list_div {
+	margin-right:10px;
+	width:25%;
+	float: left;
+}
+
+#order_content_div {
+	margin-right:10px;
+	width:40%;
+	float: left;
+}
+
+#main_order_list {
+	height:30rem; 
+	list-style-type: none;
+	text-align: center;
+}
+
+.order_content {
+	height:30rem; 
+	width:100%;
+	list-style-type: none;
+}
+
+.chat_switch {
+  padding-left: 0.1em;
+  width: 50px;
+  height: 50px;
+}
+
+.chat {
+	padding-left : 48em;
+}
+
+.message_holder {
+	width:100%;
+	height:15rem;
+}
+
+.message_field {
+	width:80.1%;
+	height:4rem;
+	float:left;
+}
+
+.sendButton {
+	width:19.9%;
+	height:4.05rem;
+	float:left;
+	border:none;
+}
+
+.halfButton {
+	width:49.3%;
+	height:50px;
+	margin-bottom:5px;
+	margin-top: 3px;
+	border:none;
+}
+
+.shipButton {
+	width:100%;
+	height:80px;
+	border:none;
+	background:#89e687;
+}
+
+.fullButton {
+	width:100%;
+	height:50px;
+	border:none;
+}
+
+#map {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+#toggle {
+	position: relative;
+	width: 10%;
+	height: 50px;
+	left: 45%;
+}
+
+#map_order_list {
+	width: 80rem;
+	height: 6rem;
+	background-color: #fafafa;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	left: 0;
+	margin-right: auto;
+	margin-left: auto;
+	border-radius: 0.1875rem;
+	box-shadow: 0 0.1875rem 0.4375rem rgba(0, 0, 0, 0.25);
+	overflow: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+	z-index: 1;
+}
+
+.sidewaysScroll {
+	display: inline-block;
+	margin-top: 3px;
+	text-align: center;
+	padding: 14px;
+	text-decoration: none;
+}
+
+.sidewaysScroll:hover {
+	background-color: #777;
+}

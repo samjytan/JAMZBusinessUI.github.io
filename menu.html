@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>JAMZ Menu Manager</title>
+		
+		<link href="menu/CSS.css" type="text/css" rel="stylesheet">
+	</head>
+	<body>
+		<div class = "everything">
+			<div class = "container">
+				<!--sidebar-->
+				<div class="app_menu">
+					<ul class="menu_content">
+						<li>
+							<a href="./menu.html" alt="Manage menu items">
+							<img src="misc/menu.svg"></a>
+						</li>
+						<li>
+							<a href="./orders.html" alt="Manage incoming/outgoing orders">
+							<img src="misc/orders.svg"></a>
+						</li>
+						<li>
+							<a href="./orders.html?drone=true" alt="Manage/view drones">
+							<img src="misc/drone.svg"></a>
+						</li>
+						<li>
+							<a href="./profile.html" alt="View profile">
+							<img src="misc/profile.svg"></a>
+						</li>
+						<li>
+							<a href="./settings.html" alt="Manage profile/app settings">
+							<img src="misc/settings.svg"></a>
+						</li>
+					</ul>
+				</div>
+				
+				<div class = "editMenuPageContent">
+					<!--title-->
+					<div class = "title">Menu Editor</div>
+
+					<!--headers-->
+					<div class = "picHeader">Photo
+						<!--dropzone-->
+						<div class="drop-zone">
+							<span class="drop-zone__prompt">Drop file here or click to upload</span>
+							<input type="file" name="myFile" class="drop-zone__input">
+						</div>
+					</div>
+					
+				    <div class = "itemHeader">Add Items
+						
+						<!--getting input from user-->
+						<div class = "textFields">
+							<!--text div 1-->
+							<div class = "texts1">
+								<p id="nameText"> Item Name: </p> 
+								<input type = "text" name="getItemName" id = "getItemName"> <br>
+								<p id="servingSizeText"> Serving size: </p>
+								<input type = "text" name="getServingSize" id = "getServingSize"><br>
+								<p id="weightText"> Weight: </p>
+								<input type = "text" name="getWeight" id = "getWeight"><br>
+								<p id="priceText"> Price: </p>
+								<input type = "text" name="getPrice" id = "getPrice"><br>
+								
+							</div>
+											
+							<!--text div 2-->
+							<div class = "texts2">
+								<p id="flavorText"> Flavors: </p>
+								<input type = "text" name="getFlavors" id = "getFlavors"><br>
+								<p id="availabilityText"> Availability: </p>
+								<input type = "text" name="getAvailability" id = "getAvailability"><br>
+								<p id="prepTimeText"> Preparation Time: </p>
+								<input type = "text" name="getPrepTime" id = "getPrepTime"><br>
+								<p id ="descriptionText"> Description: </p>
+								<textarea id="description" rows="2" cols="1"></textarea><br>
+							</div>		
+						</div>
+
+						<!--buttons-->
+						<div class="buttons">
+							<button id = "enter" type="Button" onclick="myButton.onclick">Enter</button>
+							<button id= "edit" type="Button" onclick="myButton.onclick">Edit/Clear</button>
+							<button id= "remove" type="Button" onclick="myButton.onclick">Remove</button>
+						</div>
+						
+						<div class = "editingRow">
+							<p id="editing">editing row: </p>
+							<p id="number"></p>
+						</div>
+						
+
+						<div class="tableDiv">
+							<!--table-->
+							<table id="table">
+								<thead>
+									<tr>
+										<th style="width:15%">Item Name</th>
+										<th style="width:38%">Description</th>
+										<th style="width:7%">Serving Size (kg)</th>
+										<th style="width:5%">Weight (kg)</th>
+										<th style="width:5%">Price ($)</th>
+										<th style="width:15%">Flavors</th>
+										<th style="width:8%">Availability (0 or 1)</th>
+										<th style="width:7%">Prep. Time (min.)</th>
+									</tr>
+								</thead>
+								<tbody>
+									
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="menu/JAVA.js"></script>
+</html>								
